@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pricing - Squid Tech Services">
+    <title>Pricing - Squid Tech Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script> <!-- For mobile menu toggle -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Style for the logo inside the navbar */
+        .logo {
+            height: 60px; /* Adjust the height of the logo */
+            width: auto; /* Ensure the width adjusts proportionally */
+            margin-right: 10px; /* Adds spacing between the logo and text */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4" x-data="{ open: false }">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Brand Name -->
+            <div class="flex items-center">
+                <img src="SquidLOGO.png" alt="Squid Tech Services Logo" class="logo">
+                <a class="text-orange-500 text-2xl font-bold" href="#" style="color: #f97316 !important;">Squid Tech Services</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="block md:hidden">
+                <button @click="open = !open" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links (shown on desktop, hidden on mobile) -->
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu (shown when toggled) -->
+        <div x-show="open" class="md:hidden bg-gray-700">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Pricing</h2>
+            <p class="text-lg text-gray-600 mb-12">Affordable and transparent pricing for all your IT needs.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Basic Troubleshooting -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Basic Troubleshooting</h3>
+                    <p class="text-gray-600 mb-4">Software installation, virus removal, and other basic fixes.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">$35/hr</p>
+                </div>
+
+                <!-- Remote Support -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Remote Support</h3>
+                    <p class="text-gray-600 mb-4">Remote desktop help, system administration, and more.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">$40/hr</p>
+                </div>
+
+                <!-- Network Setup and Troubleshooting -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Network Setup and Troubleshooting</h3>
+                    <p class="text-gray-600 mb-4">Configuring routers, firewalls, VPN setups, and more.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">$55/hr</p>
+                </div>
+
+                <!-- Automation and Small Business Solutions -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Automation and Small Business Solutions</h3>
+                    <p class="text-gray-600 mb-4">Custom scripts, automation solutions for your business.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">$65/hr</p>
+                </div>
+
+                <!-- Consulting and System Audits -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Consulting and System Audits</h3>
+                    <p class="text-gray-600 mb-4">Cybersecurity audits, system reviews, and expert consulting.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">$85/hr</p>
+                </div>
+
+                <!-- Hardware Installation / PC Builds -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-orange-500">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hardware Installation / PC Builds</h3>
+                    <p class="text-gray-600 mb-4">Custom PC builds and hardware installation, pay-as-you-go.</p>
+                    <p class="text-3xl font-bold text-orange-500 mb-4">Pay-As-You-Go</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2024 Squid Tech Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
