@@ -1,164 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Squid Tech Services - Fast, Intelligent IT Solutions for Small Businesses.">
-    <title>Squid Tech Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script> <!-- For mobile menu toggle -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        /* Style for the logo inside the navbar */
-        .logo {
-            height: 60px; /* Adjust the height of the logo */
-            width: auto; /* Ensure the width adjusts proportionally */
-            margin-right: 10px; /* Adds spacing between the logo and text */
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071722">
+  <meta name="description" content="Squid Tech Services helps Jacksonville homeowners get settled with new-home technology, home office and outdoor entertainment setup. Weekend appointments available. Request a quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="New Home Technology Setup in Jacksonville | Squid Tech Services">
+  <meta property="og:description" content="From the home office to the poolside patio, make the technology in your new home work together. Serving Jacksonville and nearby communities.">
+  <meta property="og:url" content="https://sudocod3r.github.io/SquidTechServices/">
+  <link rel="canonical" href="https://sudocod3r.github.io/SquidTechServices/">
+  <title>New Home Technology Setup Jacksonville | Squid Tech Services</title>
+  <style>
+    :root{--navy:#071722;--navy2:#0d2532;--cyan:#5de7e4;--ink:#142d3a;--muted:#5a6e77;--paper:#f4f7f6;--white:#fff;--line:#dce5e5;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}a{color:inherit}button{font:inherit}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 44px));margin:auto}.skip{position:absolute;left:12px;top:-60px;background:white;color:black;padding:12px;z-index:100}.skip:focus{top:10px}
+    .topline{background:#0e2b36;color:#d2eced;font-size:12px;letter-spacing:.04em}.topline .container{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:20px}.topline a{color:#c4f6f2;text-decoration:none}
+    .site-header{position:relative;z-index:10;background:var(--navy);border-bottom:1px solid #ffffff20;color:white}.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;font-size:19px;letter-spacing:-.035em}.brand img{width:47px;height:47px;object-fit:contain}.brand small{display:block;font-weight:500;font-size:10px;color:#a5c1ca;letter-spacing:.16em;text-transform:uppercase}.links{display:flex;align-items:center;gap:28px}.links a{text-decoration:none;font-size:13px;font-weight:650;color:#d6e3e8}.links a:hover,.links a[aria-current=page]{color:var(--cyan)}.nav-cta{border:1px solid var(--cyan);padding:11px 17px;border-radius:5px;color:var(--cyan)!important}.menu-btn{display:none;color:white;background:transparent;border:1px solid #ffffff47;border-radius:5px;padding:9px 12px}
+    .hero{background:radial-gradient(ellipse at 80% 28%,#1c4851 0%,transparent 48%),linear-gradient(120deg,#071722 0%,#0a202d 65%,#0c303b 100%);color:white;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:48px;min-height:590px;padding-top:86px;padding-bottom:93px}.eyebrow{color:#008d94;text-transform:uppercase;letter-spacing:.19em;font-size:11px;font-weight:800}.hero .eyebrow{color:var(--cyan)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5.5vw,73px);line-height:1.07;letter-spacing:-.055em;margin:16px 0 23px;font-weight:800}h1 em{font-style:normal;color:var(--cyan)}.hero-copy{color:#b6ccd3;max-width:590px;font-size:17px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;border-radius:6px;padding:14px 21px;font-size:13px;font-weight:800;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--cyan);color:#05242c}.btn-outline{border:1px solid #6e929d;color:#fff}.btn-dark{background:var(--navy);color:white}.hero-note{font-size:12px;color:#9ec0c8;margin:24px 0 0}.hero-art{position:relative;min-height:398px;border-radius:14px;background:linear-gradient(145deg,#1e4b57,#0d2a35);border:1px solid #72c7c136;box-shadow:0 30px 75px #0007;padding:28px;overflow:hidden}.hero-art:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,#76f2dc22,transparent 35%),linear-gradient(0deg,#06141c8c,transparent 55%)}.art-label{position:relative;z-index:1;display:flex;align-items:center;gap:8px;color:#bde8e4;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:800}.dot{width:7px;height:7px;border-radius:100%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}.house{position:relative;z-index:1;width:100%;height:230px;margin-top:40px;overflow:visible}.house .stroke{fill:none;stroke:#a9f4ee;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.house .shade{fill:#6ae7dc15;stroke:#4eb7b840;stroke-width:1}.house .window{fill:#d6ffff35;stroke:#c6ffff9e}.art-bottom{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:5px}.art-chip{background:#071d2bb8;border:1px solid #8ee5e344;color:#d5f8f7;font-size:11px;padding:11px 7px;border-radius:6px;text-align:center}.art-chip strong{display:block;color:var(--cyan);font-size:18px;margin-bottom:3px}
+    .trust{margin-top:-28px;position:relative;z-index:2}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border-radius:9px;background:#d5e1e1;box-shadow:0 12px 30px #09273513;overflow:hidden}.trust-item{padding:21px 22px;background:white;display:flex;gap:12px;align-items:center;font-size:13px;font-weight:750}.trust-icon{color:#07878e;font-size:23px}
+    section{scroll-margin-top:30px}.section{padding:92px 0}.section-header{max-width:730px;margin-bottom:33px}.section-header h2{font-size:clamp(32px,4vw,45px);line-height:1.16;letter-spacing:-.043em;margin:10px 0 14px}.section-header p{color:var(--muted);font-size:16px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:30px;display:flex;flex-direction:column;box-shadow:0 12px 20px #08212b07}.number{font-weight:800;letter-spacing:.15em;color:#008a91;font-size:11px}.service-card h3{font-size:23px;letter-spacing:-.035em;line-height:1.2;margin:20px 0 10px}.service-card p{color:var(--muted);font-size:14px}.service-card ul{padding-left:18px;margin:10px 0 26px;color:#405662;font-size:13px;line-height:2}.service-card a{margin-top:auto;color:#007d87;font-weight:800;font-size:13px;text-decoration:none}.service-card a:hover{text-decoration:underline}.service-card.feature{background:#0a2531;border-color:#0a2531;color:#fff}.service-card.feature p,.service-card.feature ul{color:#c0d7dc}.service-card.feature .number,.service-card.feature a{color:var(--cyan)}
+    .feature-band{background:var(--navy);color:white;padding:75px 0}.feature-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.feature-image{border-radius:11px;min-height:310px;padding:30px;background:linear-gradient(135deg,#1d5c63,#0b2835 80%);border:1px solid #9fdad536;position:relative;overflow:hidden}.feature-image:after{content:"";position:absolute;width:350px;height:350px;border:1px solid #83dfdb3b;border-radius:100%;right:-75px;top:30px;box-shadow:0 0 0 50px #67dfd90b,0 0 0 100px #67dfd90b}.feature-image .badge-text{position:absolute;bottom:28px;left:30px;z-index:1;color:#ddffff;letter-spacing:-.03em;font-size:29px;line-height:1.17;font-weight:850;max-width:245px}.feature-image .badge-text span{color:var(--cyan)}.feature-layout h2{font-size:clamp(31px,4vw,44px);line-height:1.15;letter-spacing:-.04em;margin:13px 0 20px}.feature-layout p{color:#bed2d8;font-size:15px}.feature-layout .mini{border-left:3px solid var(--cyan);padding-left:16px;margin:22px 0 28px;color:#d1eeee;font-size:14px}
+    .how{background:#fff}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step{border-top:2px solid #b4cdcd;padding-top:22px}.step b{font-size:38px;line-height:1;color:#077e84;letter-spacing:-.07em}.step h3{font-size:20px;margin:17px 0 8px}.step p{color:var(--muted);font-size:14px}
+    .business{background:#e9f1f0}.business-row{display:flex;gap:50px;justify-content:space-between;align-items:center}.business-row h2{font-size:clamp(29px,3vw,40px);letter-spacing:-.04em;margin:12px 0}.business-row p{color:var(--muted);max-width:650px}.business-row .btn{white-space:nowrap}
+    .cta-section{background:linear-gradient(120deg,#092630,#10434c);color:white;padding:75px 0}.cta-panel{display:flex;align-items:center;justify-content:space-between;gap:40px}.cta-panel h2{font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-.04em;margin:12px 0}.cta-panel p{color:#c3d9db;margin-bottom:0}.cta-actions{display:flex;flex-direction:column;gap:10px;min-width:220px}.cta-actions .btn{width:100%}
+    footer{background:#05131d;color:#b6ccd2;padding:39px 0;font-size:13px}.footer-grid{display:flex;gap:24px;align-items:flex-start;justify-content:space-between}.footer-grid strong{color:white;font-size:16px}.footer-grid a{text-decoration:none;color:#d5eded}.footer-grid a:hover{text-decoration:underline}.fine{font-size:11px;color:#88aab3;margin-top:14px;max-width:660px}.divider{border-top:1px solid #ffffff1b;margin-top:29px;padding-top:17px;color:#89a2aa;font-size:11px}
+    @media(max-width:900px){.hero-inner{grid-template-columns:1fr;padding:70px 0;gap:32px}.hero-art{min-height:350px;max-width:650px;width:100%}.house{margin-top:18px;height:210px}.service-grid{grid-template-columns:1fr 1fr}.feature-layout{gap:30px}.links{gap:14px}}
+    @media(max-width:650px){.container{width:min(var(--max),calc(100% - 32px))}.topline .container{min-height:32px}.topline .right{display:none}.nav-wrap{min-height:71px}.brand{font-size:16px}.brand img{width:41px;height:41px}.menu-btn{display:block}.links{display:none;position:absolute;left:0;right:0;top:100%;background:#091d28;padding:16px 22px 22px;border-top:1px solid #ffffff26;flex-direction:column;align-items:stretch;box-shadow:0 12px 30px #0005}.links.open{display:flex}.links a{padding:8px}.hero-inner{padding:57px 0 65px}.hero-copy{font-size:15px}h1{font-size:clamp(40px,11vw,60px)}.hero-art{min-height:320px;padding:20px}.house{height:185px}.trust-grid{grid-template-columns:1fr}.trust-item{padding:16px 18px}.section{padding:68px 0}.service-grid,.steps,.feature-layout{grid-template-columns:1fr}.service-card{padding:26px}.feature-band{padding:65px 0}.feature-image{min-height:245px}.business-row,.cta-panel,.footer-grid{flex-direction:column;align-items:stretch;gap:20px}.cta-actions{width:100%}.cta-section{padding:64px 0}.btn{width:100%}.actions{width:100%}.footer-grid{gap:20px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-
-    <!-- Navbar in index.html -->
-<nav class="bg-gray-800 p-4" x-data="{ open: false }">
-    <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo and Brand Name -->
-        <div class="flex items-center">
-            <img src="SquidLOGO.png" alt="Squid Tech Services Logo" class="logo">
-            <a class="text-white text-2xl font-bold" href="#" style="color: white !important;">Squid Tech Services</a>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="block md:hidden">
-            <button @click="open = !open" class="text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-
-        <!-- Links (shown on desktop, hidden on mobile) -->
-        <ul class="hidden md:flex space-x-4">
-            <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
-            <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
-            <li><a href="Pricing.html" class="text-gray-300 hover:text-white">Pricing</a></li> <!-- Pricing Link -->
-            <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Mobile Menu (shown when toggled) -->
-    <div x-show="open" class="md:hidden bg-gray-700">
-        <ul class="flex flex-col space-y-2 p-4">
-            <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
-            <li><a href="#services" class="text-gray-300 hover:text-white">Services</a></li>
-            <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
-            <li><a href="Pricing.html" class="text-gray-300 hover:text-white">Pricing</a></li> <!-- Pricing Link -->
-            <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
- <!-- Jacksonville Image Section with Text Overlay -->
-<div class="relative">
-    <!-- Jacksonville Image -->
-    <img src="jacksonville.jpg" alt="jacksonville.jpg" class="w-full h-auto">
-    
-    <!-- Text Overlay -->
-    <div class="absolute top-0 left-0 w-full flex items-start justify-center pt-4">
-        <h1 class="text-white text-4xl md:text-6xl font-bold text-center" style="text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">JACKSONVILLE</h1>
-    </div>
-</div>
-    
-<!-- Hero Section -->
-<section id="home" class="flex items-center justify-center bg-orange-500 h-screen text-black">
-    <div class="text-center">
-        <h1 class="text-5xl font-bold mb-4">In Need of IT Services?</h1>
-        <p class="text-xl mb-4">Fast, Intelligent IT Solutions for Small Businesses.</p>
-        <a href="contact.html" class="bg-gray-900 hover:bg-gray-700 text-white py-3 px-6 rounded-lg">Get a Free Consultation!</a>
-    </div>
-</section>
-
- <!-- Services Section -->
- <section id="services" class="py-16 bg-gray-50">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-cloud fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">Cloud Solutions</h3>
-                <p class="mt-4 text-gray-600">Agile cloud setups that keep your business running smoothly and securely.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-shield-alt fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">PC Troubleshooting</h3>
-                <p class="mt-4 text-gray-600">No issue is too big or small.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-cogs fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">IT Consulting</h3>
-                <p class="mt-4 text-gray-600">Get expert advice to streamline your IT infrastructure and grow your business efficiently.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-network-wired fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">Network Setup & Management</h3>
-                <p class="mt-4 text-gray-600">Set up and manage secure and efficient networks for your business.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-tools fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">Hardware Installation</h3>
-                <p class="mt-4 text-gray-600">We provide installation and configuration of IT hardware solutions.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <i class="fas fa-shield-alt fa-2x text-orange-500"></i>
-                <h3 class="text-xl font-semibold text-gray-800 mt-4">Cybersecurity</h3>
-                <p class="mt-4 text-gray-600">Protect your business with cutting-edge cybersecurity solutions.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
- <!-- About Us Section -->
-<section id="about" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8">About Us</h2>
-        <p class="text-lg text-gray-600 mb-8">
-            Squid IT Services is a technology solutions company that helps small businesses manage their IT infrastructure. 
-            From setting up networks and hardware to providing ongoing support and cloud-based solutions, 
-            we are committed to ensuring your business runs smoothly and securely. Our team has years of experience in the IT industry and 
-            understands the unique challenges that small businesses face when it comes to technology.
-        </p>
-        <!-- Meet the Owner Button -->
-        <a href="https://sudocod3r.github.io/" class="bg-black hover:bg-gray-700 text-white py-3 px-6 rounded-lg mt-4 inline-block mb-8">Meet the Owner!</a>
-    </div>
-</section>
-
-    <!-- Contact Section (Your Business Info) -->
-    <section id="contact" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8">Contact Us</h2>
-            <p class="text-lg text-gray-600 mb-4">We'd love to hear from you! Schedule a free appointment today!:</p>
-            <a href="contact.html" class="bg-gray-900 hover:bg-gray-700 text-white py-3 px-6 rounded-lg">Schedule an Appointment!</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-6">
-        <div class="container mx-auto text-center text-white">
-            <p>&copy; 2024 Squid Tech Services. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Smooth Scrolling JS -->
-    <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-    </script>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="topline"><div class="container"><span>LOCAL TECHNOLOGY SUPPORT · JACKSONVILLE, FL</span><span class="right">Weekend appointments &nbsp; · &nbsp; <a href="tel:+19043820807">(904) 382-0807</a></span></div></div>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html" aria-label="Squid Tech Services home"><img src="SquidLOGO.png" alt="" onerror="this.style.display='none'"><span>Squid Tech Services<small>New home technology specialists</small></span></a>
+  <button class="menu-btn" id="menuButton" type="button" aria-controls="mainMenu" aria-expanded="false">☰ &nbsp; Menu</button>
+  <nav class="links" id="mainMenu" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="#services">Home Services</a><a href="#process">How It Works</a><a href="#business">Business IT</a><a href="Pricing.html">Pricing</a><a href="contact.html" class="nav-cta">Request a Quote ↗</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container hero-inner"><div>
+  <div class="eyebrow">A smarter start for your new home</div>
+  <h1>Move in.<br>Plug in.<br><em>Enjoy your home.</em></h1>
+  <p class="hero-copy">From your living room and home office to the poolside patio, Squid Tech Services helps get your new home's technology connected, configured, and ready for everyday life.</p>
+  <div class="actions"><a class="btn btn-primary" href="contact.html">Plan My Home Setup →</a><a class="btn btn-outline" href="tel:+19043820807">Call (904) 382-0807</a></div>
+  <p class="hero-note">Serving Jacksonville, Ponte Vedra, Nocatee, St. Johns & surrounding communities.</p>
+</div><div class="hero-art" role="img" aria-label="Illustration of a connected modern home with indoor, office and outdoor technology">
+ <div class="art-label"><span class="dot"></span> ONE HOME. EVERYTHING CONNECTED.</div>
+ <svg class="house" viewBox="0 0 420 250" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path class="shade" d="M52 110L210 21 368 110V226H52Z"/><path class="stroke" d="M29 117L210 15 391 117M59 100V231H362V100"/><path class="stroke" d="M188 229V147H247V229M91 145H153V195H91ZM273 145H332V195H273Z"/><rect class="window" x="93" y="147" width="58" height="47"/><rect class="window" x="275" y="147" width="55" height="47"/><path class="stroke" d="M113 170h19M302 170h0M216 160v20"/><circle class="stroke" cx="210" cy="86" r="8"/><path class="stroke" d="M189 66q21-19 42 0M177 54q33-34 66 0"/><path class="stroke" d="M21 232h380M349 210l22-22 22 22M382 175v32"/></svg>
+ <div class="art-bottom"><div class="art-chip"><strong>01</strong>Inside</div><div class="art-chip"><strong>02</strong>Office</div><div class="art-chip"><strong>03</strong>Outside</div></div>
+</div></div></section>
+<div class="trust"><div class="container trust-grid"><div class="trust-item"><span class="trust-icon">◈</span> One point of contact</div><div class="trust-item"><span class="trust-icon">⌂</span> In-home & weekend appointments</div><div class="trust-item"><span class="trust-icon">✓</span> Personalized project quotes</div></div></div>
+<section class="section" id="services"><div class="container"><div class="section-header"><div class="eyebrow">What we help you set up</div><h2>Every space, ready for living.</h2><p>Choose the services you need—or tell us everything on your wishlist and we'll plan it as one coordinated project.</p></div><div class="service-grid">
+ <article class="service-card"><div class="number">SERVICE / 01</div><h3>New Home<br>Technology Setup</h3><p>Take the tech headaches off your moving checklist.</p><ul><li>Existing router and Wi-Fi setup</li><li>Smart TVs and streaming devices</li><li>Smart speakers and connected gadgets</li><li>Printer and device connectivity</li><li>Helpful homeowner walkthrough</li></ul><a href="contact.html">Request indoor setup →</a></article>
+ <article class="service-card"><div class="number">SERVICE / 02</div><h3>New Home<br>Office Setup</h3><p>Get your workspace ready for a productive first day.</p><ul><li>Computers, monitors and docks</li><li>Keyboards, webcams and headsets</li><li>Printer and scanner configuration</li><li>Existing network connectivity</li><li>Desktop cable organization</li></ul><a href="contact.html">Request office setup →</a></article>
+ <article class="service-card feature"><div class="number">SERVICE / 03</div><h3>New Home<br>Outdoor Technology</h3><p>Make the patio, pool and outdoor entertaining spaces part of the experience.</p><ul><li>Outdoor-rated TV setup assistance</li><li>Streaming and device configuration</li><li>Poolside audio device setup</li><li>Outdoor Wi-Fi planning</li><li>Integration with existing systems</li></ul><a href="contact.html">Discuss outdoor setup →</a></article>
+</div></div></section>
+<section class="feature-band"><div class="container feature-layout"><div class="feature-image"><div class="eyebrow" style="color:#bce8e6;position:relative;z-index:1">THE COMPLETE EXPERIENCE</div><div class="badge-text">From the front door to <span>the backyard.</span></div></div><div><div class="eyebrow" style="color:var(--cyan)">One personalized plan</div><h2>Whole-Home Technology Setup</h2><p>Moving into a house with a long list of technology projects? We'll help you prioritize indoor devices, home office equipment and outdoor entertainment in one coordinated scope of work.</p><div class="mini">Tell us what you already own, what you want to add, and which spaces matter most. We'll build a quote around your home—not a one-size-fits-all bundle.</div><a href="contact.html" class="btn btn-primary">Get a Whole-Home Quote →</a></div></div></section>
+<section class="section how" id="process"><div class="container"><div class="section-header"><div class="eyebrow">Simple from the first call</div><h2>How it works.</h2><p>Clear expectations, straightforward scheduling and a setup that fits your actual needs.</p></div><div class="steps"><div class="step"><b>01</b><h3>Tell us the vision.</h3><p>Share your home layout, the technology you have, and what you'd like working after move-in.</p></div><div class="step"><b>02</b><h3>Get a clear plan.</h3><p>We'll confirm the scope, suggest the right approach, and provide a quote for setup services.</p></div><div class="step"><b>03</b><h3>Enjoy your setup.</h3><p>Schedule a convenient appointment, test connected devices, and get a walkthrough of your system.</p></div></div></div></section>
+<section class="section business" id="business"><div class="container business-row"><div><div class="eyebrow">Not just for homeowners</div><h2>Small business IT, too.</h2><p>Squid Tech Services also assists small businesses with practical technology needs, including computer setup, network troubleshooting, Microsoft 365 support and technical consulting. Ask about project availability.</p></div><a href="contact.html" class="btn btn-dark">Ask About Business IT →</a></div></section>
+<section class="cta-section"><div class="container cta-panel"><div><div class="eyebrow" style="color:var(--cyan)">Let's get everything connected</div><h2>Your new home.<br>Your technology. Our help.</h2><p>Tell us what you're planning. We’ll help you figure out the next step.</p></div><div class="cta-actions"><a href="contact.html" class="btn btn-primary">Request a Quote →</a><a href="tel:+19043820807" class="btn btn-outline">Call or Text (904) 382-0807</a></div></div></section>
+</main>
+<footer><div class="container"><div class="footer-grid"><div><strong>Squid Tech Services</strong><p>New-home technology and small-business IT support<br>Jacksonville, Florida and surrounding communities.</p></div><div><strong>Get in touch</strong><p><a href="tel:+19043820807">(904) 382-0807</a><br><a href="mailto:martin.kyle121@gmail.com">martin.kyle121@gmail.com</a><br><a href="contact.html">Request a quote</a></p></div><div><strong>Explore</strong><p><a href="#services">Home setup services</a><br><a href="Pricing.html">Pricing</a><br><a href="#business">Small business IT</a></p></div></div><div class="fine">Outdoor TV mounting, electrical work, new cabling, permanently installed audio and security systems may require separately licensed professionals. Services and scope are confirmed before booking.</div><div class="divider">© <span id="year">2026</span> Squid Tech Services. All rights reserved.</div></div></footer>
+<script>
+ const menuButton=document.getElementById('menuButton');const menu=document.getElementById('mainMenu');
+ menuButton.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menu.classList.toggle('open',!expanded)});
+ menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));
+ document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
